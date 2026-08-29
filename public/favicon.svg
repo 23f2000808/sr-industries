@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <circle cx="50" cy="50" r="48" fill="#003527" />
+  <circle cx="50" cy="50" r="44" fill="none" stroke="#b4975a" stroke-width="2" />
+  <path d="M50 20 C60 35 75 45 75 60 C75 75 65 82 50 82 C35 82 25 75 25 60 C25 45 40 35 50 20 Z" fill="#b4975a" opacity="0.9"/>
+  <path d="M50 25 C55 38 68 47 68 60 C68 70 60 76 50 76 C40 76 32 70 32 60 C32 47 45 38 50 25 Z" fill="#003527"/>
+  <text x="50" y="65" font-family="'Playfair Display', serif" font-size="22" font-weight="bold" fill="#b4975a" text-anchor="middle">SR</text>
+</svg>

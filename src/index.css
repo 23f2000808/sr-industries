@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    color-scheme: light;
+  }
+
+  body {
+    background-color: #f8faf6;
+    color: #191c1b;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  /* Custom smooth scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #f2f4f1;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #bfc9c3;
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #707974;
+  }
+}
+
+@layer utilities {
+  .ambient-shadow {
+    box-shadow: 0 10px 40px -10px rgba(6, 78, 59, 0.06);
+  }
+
+  .ambient-shadow-lg {
+    box-shadow: 0 20px 50px -12px rgba(6, 78, 59, 0.12);
+  }
+
+  .gold-border {
+    border: 1px solid rgba(180, 151, 90, 0.35);
+  }
+
+  .gold-border-strong {
+    border: 1px solid rgba(180, 151, 90, 0.6);
+  }
+
+  .gold-gradient-text {
+    background: linear-gradient(135deg, #735b24 0%, #b4975a 50%, #735b24 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .hover-lift {
+    transition: transform 0.28s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .hover-lift:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 40px -10px rgba(6, 78, 59, 0.1);
+  }
+
+  .glass-header {
+    background: rgba(248, 250, 246, 0.92);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+
+  .glass-card {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(8px);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.98); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
