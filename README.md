@@ -106,7 +106,6 @@ sr-industries/
 ├── tsconfig.json           # TypeScript configuration
 ├── tsconfig.node.json      # Vite TypeScript node configuration
 ├── vite.config.ts          # Vite build settings
-├── requirements.txt        # Runtime and package versions specification
 ├── .gitignore              # Git ignore rules
 ├── public/
 │   └── favicon.svg         # SVG Brand Favicon
